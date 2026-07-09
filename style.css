@@ -28,7 +28,7 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-/* Light Mode */
+
 body.light-mode {
   --bg-primary: #f5f5f8;
   --bg-secondary: #eaeaef;
@@ -70,7 +70,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ============ SCROLLBAR ============ */
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -88,7 +88,7 @@ body {
   background: var(--accent-purple);
 }
 
-/* ============ NAVBAR ============ */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -135,18 +135,17 @@ body.light-mode .navbar.scrolled {
 
 .logo-img {
   height: 40px;
-  /* sesuaikan tinggi logo */
+
   width: auto;
   display: none;
-  /* sembunyikan semua dulu */
+
 }
 
-/* Default (mode gelap): tampilkan logo-dark */
+
 .logo-dark {
   display: block;
 }
 
-/* Mode terang: sembunyikan logo-dark, tampilkan logo-light */
 body.light-mode .logo-dark {
   display: none;
 }
@@ -240,7 +239,7 @@ body.light-mode .logo-light {
   padding: 0.4rem;
 }
 
-/* ============ HERO ============ */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -491,7 +490,7 @@ body.light-mode .hero-content h1 {
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.1);
 }
 
-/* ============ SECTIONS ============ */
+
 .section {
   padding: 6rem 2rem;
   position: relative;
@@ -533,7 +532,6 @@ body.light-mode .hero-content h1 {
   line-height: 1.8;
 }
 
-/* ============ TENTANG KAMI ============ */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -594,7 +592,7 @@ body.light-mode .hero-content h1 {
   line-height: 1.7;
 }
 
-/* ============ DIVISI ============ */
+
 .divisi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -697,7 +695,6 @@ body.light-mode .hero-content h1 {
   letter-spacing: 0.03em;
 }
 
-/* ============ KEGIATAN ============ */
 .kegiatan-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -756,7 +753,7 @@ body.light-mode .hero-content h1 {
   line-height: 1.6;
 }
 
-/* ============ KEPENGURUSAN ============ */
+
 .pengurus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -856,7 +853,7 @@ body.light-mode .hero-content h1 {
   box-shadow: 0 0 12px var(--accent-purple-glow);
 }
 
-/* ============ FAQ ============ */
+
 .faq-list {
   max-width: 750px;
   display: flex;
@@ -925,7 +922,6 @@ body.light-mode .hero-content h1 {
   padding: 0 1.5rem 1.3rem;
 }
 
-/* ============ KONTAK ============ */
 .kontak-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -992,7 +988,6 @@ body.light-mode .hero-content h1 {
   border: none;
 }
 
-/* ============ FORM PENDAFTARAN ============ */
 .form-card {
   background: var(--bg-glass);
   backdrop-filter: var(--glass-blur);
@@ -1071,7 +1066,7 @@ body.light-mode .hero-content h1 {
   transform: translateY(-2px);
 }
 
-/* ============ FOOTER ============ */
+
 .footer {
   text-align: center;
   padding: 3rem 2rem;
@@ -1087,7 +1082,6 @@ body.light-mode .hero-content h1 {
   margin-bottom: 0.5rem;
 }
 
-/* ============ BACK TO TOP ============ */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -1125,7 +1119,6 @@ body.light-mode .hero-content h1 {
   box-shadow: 0 0 25px var(--accent-purple-glow);
 }
 
-/* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {
   .kontak-grid {
     grid-template-columns: 1fr;
