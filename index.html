@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/IT CLUB.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="#" class="nav-logo">
+          <img
+            src="img/IT CLUB.png"
+            alt="IT Club Logo"
+            class="logo-img logo-light"
+          />
+          <img
+            src="img/IT CLUB Dark.png"
+            alt="IT Club Logo"
+            class="logo-img logo-dark"
+          />
+          <span>Information Technology Club</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#tentang" onclick="closeMenu()">Tentang</a></li>
+          <li><a href="#divisi" onclick="closeMenu()">Divisi</a></li>
+          <li><a href="#kegiatan" onclick="closeMenu()">Kegiatan</a></li>
+          <li><a href="#pengurus" onclick="closeMenu()">Pengurus</a></li>
+          <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+          <li><a href="#kontak" onclick="closeMenu()">Kontak</a></li>
+          <li>
+            <a href="#daftar" class="cta-nav" onclick="closeMenu()">Gabung</a>
+          </li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="grid-pattern"></div>
+        <div class="glow-orb purple"></div>
+        <div class="glow-orb blue"></div>
+        <div class="glow-orb cyan"></div>
+        <!-- Floating code snippets -->
+        <span class="code-float" style="top: 15%; left: 5%; font-size: 0.7rem"
+          >&lt;div class="app"&gt;</span
+        >
+        <span class="code-float" style="top: 30%; left: 75%; font-size: 0.65rem"
+          >function init() {}</span
+        >
+        <span class="code-float" style="top: 55%; left: 10%; font-size: 0.75rem"
+          >const data = await fetch()</span
+        >
+        <span class="code-float" style="top: 70%; left: 80%; font-size: 0.7rem"
+          >npm run dev</span
+        >
+        <span class="code-float" style="top: 40%; left: 50%; font-size: 0.6rem"
+          >import React from 'react'</span
+        >
+        <span class="code-float" style="top: 20%; left: 35%; font-size: 0.55rem"
+          >git push origin main</span
+        >
+        <span class="code-float" style="top: 65%; left: 30%; font-size: 0.68rem"
+          >SELECT * FROM users</span
+        >
+        <span class="code-float" style="top: 80%; left: 55%; font-size: 0.62rem"
+          >docker-compose up</span
+        >
+      </div>
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-icon"><i class="fas fa-code"></i></div>
+        <h1>Belajar Teknologi,<br />Berkarya Bersama.</h1>
+        <p>
+          Information Technology Club adalah organisasi yang mewadahi siswa
+          untuk belajar pemrograman, cybersecurity, desain, dan berbagai
+          teknologi lainnya.
+        </p>
+        <div class="hero-buttons">
+          <a href="#daftar" class="btn btn-primary"
+            ><i class="fas fa-rocket"></i> Gabung Sekarang</a
+          >
+          <a href="#tentang" class="btn btn-outline"
+            ><i class="fas fa-info-circle"></i> Pelajari Lebih</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TENTANG KAMI ==================== -->
+    <section class="section" id="tentang">
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">About Us</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Mengenal Information Technology Club Lebih Dekat
+        </h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">
+          Sejak berdiri, Information Technology Club telah menjadi wadah bagi
+          siswa untuk mengembangkan minat dan bakat di bidang teknologi
+          informasi. Kami percaya setiap siswa memiliki potensi untuk menjadi
+          inovator teknologi masa depan.
+        </p>
+        <div class="about-grid">
+          <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="card-icon">📜</span>
+            <h3>Sejarah</h3>
+            <p>
+              Information Technology Club didirikan oleh sekelompok siswa yang
+              memiliki passion di bidang teknologi. Berawal dari kelompok
+              belajar kecil, kini kami berkembang menjadi organisasi yang aktif
+              mengadakan kompetisi, dan proyek kolaboratif.
+            </p>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="250">
+            <span class="card-icon">🔭</span>
+            <h3>Visi</h3>
+            <p>
+              Menjadi komunitas teknologi terdepan di lingkungan sekolah yang
+              melahirkan generasi muda kreatif, inovatif, dan siap bersaing di
+              era digital.
+            </p>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="card-icon">🎯</span>
+            <h3>Misi</h3>
+            <p>
+              Menyediakan lingkungan belajar yang inklusif, mengadakan pelatihan
+              rutin, mendorong kolaborasi proyek, dan memfasilitasi siswa untuk
+              mengikuti kompetisi teknologi.
+            </p>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="350">
+            <span class="card-icon">🏆</span>
+            <h3>Tujuan</h3>
+            <p>
+              Membekali anggota dengan skill teknis yang relevan, membangun
+              portofolio proyek nyata, serta menumbuhkan jiwa kepemimpinan dan
+              kerja sama tim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DIVISI ==================== -->
+    <section
+      class="section"
+      id="divisi"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">Materi</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Materi yang Mungkin Kamu Minati
+        </h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">
+          Setiap divisi memiliki kurikulum pembelajaran yang terstruktur dan
+          proyek menarik. Kamu bisa memilih satu atau lebih divisi sesuai
+          minatmu.
+        </p>
+        <div class="divisi-grid">
+          <!-- Programming -->
+          <div class="divisi-card" data-aos="fade-right" data-aos-delay="200">
+            <div class="divisi-header">
+              <div class="divisi-icon programming">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem">
+              Mendalami pengembangan software, web, dan mobile app dengan
+              teknologi modern.
+            </p>
+            <p style="font-weight: 600; font-size: 0.85rem; margin-top: 1rem">
+              Belajar:
+            </p>
+            <ul class="skill-list">
+              <li>HTML, CSS, JavaScript</li>
+              <li>React & Next.js</li>
+              <li>Node.js & Express</li>
+              <li>Database SQL & NoSQL</li>
+              <li>Git & Version Control</li>
+            </ul>
+            <p class="project-label">Project:</p>
+            <span class="project-tag">Website Profil Sekolah</span>
+            <span class="project-tag">Aplikasi Manajemen Tugas</span>
+            <span class="project-tag">Bot Discord</span>
+          </div>
+          <!-- Networking -->
+          <div class="divisi-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="divisi-header">
+              <div class="divisi-icon networking">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Desain Dasar</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem">
+              Mempelajari prinsip dasar komunikasi visual, kombinasi warna,
+              layout, dan pembuatan aset grafis digital yang menarik.
+            </p>
+            <p style="font-weight: 600; font-size: 0.85rem; margin-top: 1rem">
+              Belajar:
+            </p>
+            <ul class="skill-list">
+              <li>Prinsip Desain (CRAP)</li>
+              <li>Teori Warna & Tipografi</li>
+              <li>Desain Vektor (Illustrator/Inkscape)</li>
+              <li>Manipulasi Foto (Photoshop/GIMP)</li>
+              <li>UI/UX Dasar & Wireframing</li>
+            </ul>
+            <p class="project-label">Project:</p>
+            <span class="project-tag">Desain Poster Event</span>
+            <span class="project-tag">Redesign UI Aplikasi</span>
+          </div>
+          <!-- Cyber Security -->
+          <div class="divisi-card" data-aos="fade-left" data-aos-delay="300">
+            <div class="divisi-header">
+              <div class="divisi-icon cyber">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <h3>Cyber Security</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem">
+              Mempelajari keamanan siber, etika hacking, dan perlindungan data.
+            </p>
+            <p style="font-weight: 600; font-size: 0.85rem; margin-top: 1rem">
+              Belajar:
+            </p>
+            <ul class="skill-list">
+              <li>Web Security</li>
+              <li>Linux</li>
+              <li>CTF (Capture The Flag)</li>
+              <li>Penetration Testing</li>
+              <li>Kriptografi Dasar</li>
+            </ul>
+            <p class="project-label">Project:</p>
+            <span class="project-tag">Vulnerable Lab</span>
+            <span class="project-tag">CTF Internal</span>
+            <span class="project-tag">Security Audit Simulasi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KEGIATAN ==================== -->
+    <section class="section" id="kegiatan">
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">Kegiatan</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Aktivitas Seru di IT Club
+        </h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">
+          Kami rutin mengadakan berbagai kegiatan untuk mengasah skill dan
+          mempererat kebersamaan.
+        </p>
+        <div class="kegiatan-grid">
+          <div class="kegiatan-card" data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="kegiatan-img"
+              style="background: linear-gradient(135deg, #1a1a2e, #16213e)"
+            >
+              <span class="placeholder-icon"
+                ><i class="fas fa-laptop-code"></i
+              ></span>
+            </div>
+            <div class="kegiatan-body">
+              <h4>Workshop</h4>
+              <p>
+                Pelatihan intensif dengan materi terkini seperti web
+                development, networking dasar, dan keamanan siber.
+              </p>
+            </div>
+          </div>
+          <div class="kegiatan-card" data-aos="zoom-in" data-aos-delay="250">
+            <div
+              class="kegiatan-img"
+              style="background: linear-gradient(135deg, #0f0f23, #1a1a3e)"
+            >
+              <span class="placeholder-icon"
+                ><i class="fas fa-comments"></i
+              ></span>
+            </div>
+            <div class="kegiatan-body">
+              <h4>Sharing Session</h4>
+              <p>
+                Diskusi santai dengan alumni, praktisi IT, atau sesama anggota
+                tentang tren teknologi terbaru.
+              </p>
+            </div>
+          </div>
+          <div class="kegiatan-card" data-aos="zoom-in" data-aos-delay="300">
+            <div
+              class="kegiatan-img"
+              style="background: linear-gradient(135deg, #1a1025, #2a1a3e)"
+            >
+              <span class="placeholder-icon"
+                ><i class="fas fa-trophy"></i
+              ></span>
+            </div>
+            <div class="kegiatan-body">
+              <h4>Kompetisi</h4>
+              <p>
+                Mengikuti lomba seperti web design competition, CTF, hackathon,
+                dan olimpiade komputer.
+              </p>
+            </div>
+          </div>
+          <div class="kegiatan-card" data-aos="zoom-in" data-aos-delay="350">
+            <div
+              class="kegiatan-img"
+              style="background: linear-gradient(135deg, #0f1a1a, #0f2a2a)"
+            >
+              <span class="placeholder-icon"><i class="fas fa-users"></i></span>
+            </div>
+            <div class="kegiatan-body">
+              <h4>Study Club</h4>
+              <p>
+                Belajar bersama setiap minggu dengan mentor yang berpengalaman
+                di bidangnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KEPENGURUSAN ==================== -->
+    <section
+      class="section"
+      id="pengurus"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">Kepengurusan</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Tim Pengurus Information Technology Club
+        </h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">
+          Dikelola oleh siswa-siswa berdedikasi yang siap membimbing dan berbagi
+          ilmu.
+        </p>
+        <div class="pengurus-grid">
+          <div class="pengurus-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="avatar-placeholder">MM</div>
+            <h4>Muhammad Meikel Rifai</h4>
+            <p class="jabatan">Ketua</p>
+            <p class="keahlian">whatever happens, happens.</p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/kellamamiyav/"
+                title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-aos="fade-up" data-aos-delay="250">
+            <div
+              class="avatar-placeholder"
+              style="background: linear-gradient(135deg, #3b82f6, #06b6d4)"
+            >
+              MF
+            </div>
+            <h4>Muhammad Faturrahman</h4>
+            <p class="jabatan">Wakil Ketua</p>
+            <p class="keahlian">fih 💔🥀</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/fufufatur_/" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="avatar-placeholder"
+              style="background: linear-gradient(135deg, #06b6d4, #10b981)"
+            >
+              DP
+            </div>
+            <h4>Aji Fiyan Aminullah</h4>
+            <p class="jabatan">Sekretaris</p>
+            <p class="keahlian">when there is a will, there is way</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/arclauzy/" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-aos="fade-up" data-aos-delay="350">
+            <div
+              class="avatar-placeholder"
+              style="background: linear-gradient(135deg, #f59e0b, #ef4444)"
+            >
+              SA
+            </div>
+            <h4>Dude Ahmad Alfathrizki</h4>
+            <p class="jabatan">Sekretaris</p>
+            <p class="keahlian">izin promosi @lokal.industries23</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/a1fath___/" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section" id="faq">
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">FAQ</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Pertanyaan yang Sering Diajukan
+        </h2>
+        <div class="faq-list" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah harus jago coding?
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tidak. Kami sangat menyarankan untuk para pemula mencoba belajar
+                di ekstrakurikuler kami. Semua anggota akan dibimbing dari
+                dasar.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah boleh dari jurusan selain TKJ?
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ya. Kami tidak terbatas hanya pada jurusan TKJ, setiap jurusan
+                dapat bergabung ke ekstrakurikuler kami. Semua diterima selama
+                memiliki minat di bidang teknologi.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Gratis?
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ya. Kami tidak memungut biaya sepeser rupiah kecuali untuk
+                kepentingan ekstrakurikuler seperti pembelian alat praktik
+                bersama atau biaya pendaftaran lomba.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Belajarnya setiap hari apa?
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Setiap Sabtu dari jam 12:00-14:00 siang. Terkadang ada sesi
+                tambahan jika sedang persiapan lomba atau proyek khusus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KONTAK ==================== -->
+    <section
+      class="section"
+      id="kontak"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">Kontak</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Hubungi Kami
+        </h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">
+          Punya pertanyaan? Jangan ragu untuk menghubungi kami melalui kontak di
+          bawah ini.
+        </p>
+        <div class="kontak-grid">
+          <div class="kontak-info" data-aos="fade-right" data-aos-delay="200">
+            <a
+              href="https://www.instagram.com/itclub.smkn4jkt/"
+              target="_blank"
+              rel="noopener"
+              class="kontak-item"
+            >
+              <div class="kontak-icon"><i class="fab fa-instagram"></i></div>
+              <span>@itclub.smkn4jkt</span>
+            </a>
+            <a
+              href="https://wa.me/6282137580525"
+              target="_blank"
+              rel="noopener"
+              class="kontak-item"
+            >
+              <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+              <span>+62 821-3758-0525</span>
+            </a>
+            <a href="#" class="kontak-item">
+              <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+              <span>sabar blom jadi emailnya ygy😹</span>
+            </a>
+            <div class="kontak-item">
+              <div class="kontak-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <span>Ruang Lab Jaringan 1, Lantai 2, Gedung E</span>
+            </div>
+          </div>
+          <div class="map-wrapper" data-aos="fade-left" data-aos-delay="250">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.3257500520765!2d106.95120822939792!3d-6.13983891932154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698af196a5390b%3A0x8a4588e7ee71da8b!2sVocational%20High%20School%20State%204%20of%20Jakarta!5e1!3m2!1sen!2sus!4v1783170984817!5m2!1sen!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi IT Club"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORM PENDAFTARAN ==================== -->
+    <section class="section" id="daftar">
+      <div class="section-inner">
+        <span class="section-label" data-aos="fade-up">Daftar</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Form Pendaftaran
+        </h2>
+        <p
+          class="section-desc"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          style="text-align: center; margin-left: auto; margin-right: auto"
+        >
+          Isi form di bawah ini untuk bergabung menjadi anggota Information
+          Technology Club.
+        </p>
+        <div class="form-card" data-aos="fade-up" data-aos-delay="250">
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan nama lengkap kamu"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="kelas">Kelas</label>
+              <select id="kelas" required>
+                <option value="" disabled selected>Pilih kelas</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="jurusan">Jurusan</label>
+              <select id="jurusan" required>
+                <option value="" disabled selected>Pilih jurusan</option>
+                <option value="TKJ">TKJ - Teknik Komputer & Jaringan</option>
+                <option value="TKP">
+                  TKP - Teknik Konstruksi dan Perumahan
+                </option>
+                <option value="DTF">DTF - Desain dan Teknik Furnitur</option>
+                <option value="TAV">TAV - Teknik Audio Video</option>
+                <option value="TEI">TEI - Teknik Elektronika Industri</option>
+                <option value="TMK">TMK - Teknik Mekatronika</option>
+                <option value="TITL">
+                  TITL - Teknik Instalasi Tenaga Listrik
+                </option>
+                <option value="TP">TP - Teknik Pemesinan</option>
+                <option value="TITL">TPL - Teknik Pengelasan</option>
+                <option value="TKR">TKR - Teknik Kendaraan Ringan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="minat">Minat Materi</label>
+              <select id="minat" required>
+                <option value="" disabled selected>
+                  Pilih materi yang diminati
+                </option>
+                <option value="Programming">Programming</option>
+                <option value="Design">Design</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Belum Tahu">Belum Tahu / Semua</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">Nomor WhatsApp</label>
+              <input
+                type="tel"
+                id="whatsapp"
+                placeholder="Contoh: 081234567890"
+                required
+              />
+            </div>
+            <button type="submit" class="form-submit">Kirim Pendaftaran</button>
+          </form>
+          <p
+            id="formMessage"
+            style="
+              text-align: center;
+              margin-top: 1rem;
+              font-weight: 600;
+              display: none;
+            "
+          ></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <p class="footer-logo">Information Technology Club</p>
+      <p>&copy; 2026 IT Club. Made by tech enthusiasts.</p>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
