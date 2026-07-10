@@ -63,6 +63,8 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
+  width: 100%;
+  position: relative;
   transition:
     background-color var(--transition-smooth),
     color var(--transition-smooth);
@@ -503,6 +505,7 @@ body.light-mode .hero-content h1 {
 .section {
   padding: 6rem 2rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .section-inner {
