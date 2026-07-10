@@ -55,6 +55,7 @@ body.light-mode {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -104,10 +105,12 @@ body {
 }
 
 .navbar.scrolled {
+  background: rgba(10, 10, 15, 0.98);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
 }
 
 body.light-mode .navbar.scrolled {
+  background: rgba(245, 245, 248, 0.98);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 
