@@ -833,7 +833,7 @@ body.light-mode .hero-content h1 {
   margin-bottom: 0.5rem;
 }
 
-.pengurus-card .keahlian {
+.pengurus-card .quotes {
   font-size: 0.85rem;
   color: var(--text-secondary);
   margin-bottom: 1rem;
@@ -1180,7 +1180,7 @@ body.light-mode .hero-content h1 {
     display: block;
   }
 
-  .divisi-grid {
+  .materi-grid {
     grid-template-columns: 1fr;
   }
 
