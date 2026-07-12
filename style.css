@@ -1054,6 +1054,11 @@ body.light-mode .hero-content h1 {
   padding-right: 2.5rem;
 }
 
+.form-group select option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
 .form-submit {
   width: 100%;
   padding: 0.9rem;
@@ -1222,5 +1227,12 @@ body.light-mode .hero-content h1 {
   .pengurus-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+
+    .pengurus-card {
+      padding: 1.5rem 0.8rem;
+      min-width: 0;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
   }
 }
