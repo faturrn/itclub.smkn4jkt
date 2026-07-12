@@ -55,7 +55,6 @@ body.light-mode {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  overflow-x: hidden;
 }
 
 body {
@@ -505,7 +504,7 @@ body.light-mode .hero-content h1 {
 .section {
   padding: 6rem 2rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 .section-inner {
@@ -1054,6 +1053,11 @@ body.light-mode .hero-content h1 {
   padding-right: 2.5rem;
 }
 
+.form-group select option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
 .form-submit {
   width: 100%;
   padding: 0.9rem;
@@ -1220,7 +1224,19 @@ body.light-mode .hero-content h1 {
   }
 
   .pengurus-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1rem;
+  }
+
+  .pengurus-card {
+    padding: 1.5rem 0.8rem;
+    min-width: 0;
+  }
+
+  .pengurus-card h4,
+  .pengurus-card p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
   }
 }
