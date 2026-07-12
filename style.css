@@ -505,7 +505,6 @@ body.light-mode .hero-content h1 {
 .section {
   padding: 6rem 2rem;
   position: relative;
-  overflow-x: hidden;
 }
 
 .section-inner {
